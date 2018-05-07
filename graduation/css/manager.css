@@ -1,0 +1,38 @@
+#right_content{    /*border: 1px solid green;*/
+  width: 100%;  
+}
+
+#affiche{                /*background-color: pink;*/
+  padding-left: 10%;    
+}
+#affiche table{           /*border: 1px solid red;*/
+  width: 115%;
+  margin-left: -6%;
+}
+#affiche td{            /*border: 1px solid blue;*/
+
+}
+.butn{
+  margin-left: 10%;margin-top: 2%;
+} 
+/*招聘查看部分*/
+#application td{     /*border: 1px solid pink;*/
+  
+}
+#aplc_title{
+  border: 1px solid #C3C3C3;
+  /*text-align: center;*/
+}
+#aplc_content td{              /* border: 1px solid black;*/
+  /*text-align: center;*/
+} 
+#leadboard{
+  text-align: center;
+}
+.sel_page{      /*border: 1px solid cyan;*/
+  margin-top: 20px;
+  text-align: center;
+}
+.sel_page a{
+  margin-left: 2%;
+}

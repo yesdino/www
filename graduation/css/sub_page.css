@@ -1,0 +1,84 @@
+.fir_display{     /*这个是入口 每次下面接着写模块都要这样写*/
+	width: 65%;    
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	padding: 0px;
+                
+	/*box-shadow: 5px 8px 2px #B1C0C5;*/
+	background-color: white;      
+	border-top: 10px solid #282828;
+	/*border-right: 10px solid #282828;*/
+
+	/*height: 500px;*/
+}
+.left{
+	width: 25%; 
+	float: left;
+	position: absolute; 
+}
+.left_nav{	
+	background-color: #1C2122;
+}
+.left_content{
+	width: 100%;    /*background-color: #DADADA;*/
+}
+.left_content p{     /*border: 1px solid red;*/
+	width: 80%;
+	margin:auto;
+	margin-top: 8%;
+
+}
+.left_content a{     /*background-color: cyan;*/
+	display: block;
+	text-align: center;
+	padding-bottom: 4%;
+	padding-top: 4%;
+	border-bottom: 1px solid #C3C3C3;
+	font-size: 15px;
+	font-weight: bold;
+	cursor:pointer;
+	
+}
+/*JS控制的类*/
+.ick{
+	background-color: #EDEDED;   /*F1F4F5#D6E0E2*/
+	color: FE5C11;
+}
+.right{                /*background-color: pink;*/
+	width: 75%; 
+	float: right;
+	left: 25%;
+	border-left: 1px solid #C3C3C3;
+	float: right;
+	margin-bottom: 10%;
+} 
+.right_title{      /*border: 1px solid green;*/
+	width: 90%;
+	margin:0 auto;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #C3C3C3;
+
+}
+.right_title a{       /*background-color: pink;*/
+	font-weight: bold;	
+	font-size: 15px;
+	margin-left:2%;
+}
+.rig_sub_title{
+	font-size: 12px;
+	margin-left: 20%;
+}
+.right_content{     /*border: 1px solid red;*/
+	width: 100%;
+	padding:10px 5% 10px;
+	margin-bottom: 10px;
+ }
+.right_content p{
+	text-indent: 2em;
+	line-height: 24px;
+}
+.suspend:hover{
+	background-color: #F6F8F8;
+}

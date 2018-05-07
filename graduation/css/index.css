@@ -1,0 +1,83 @@
+.fir_display{     /*这个是入口 每次下面接着写模块都要这样写*/
+	width: 65%;    
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+	padding: 0px;
+	
+	border: 10px solid #1C2122;
+	box-shadow: 5px 8px 2px #B1C0C5;
+	background-color: white;
+}
+.block{
+	width: 50%;
+}
+#left{
+	background-color: #1C2122;
+	height: 100%;  /*高度全部填充父元素 */
+	padding-top: 5px;
+}
+#right{
+	position: absolute; left: 50%;top: 0px;
+	background-color: white;
+	margin-top: 5px;
+}
+#left p{
+	text-indent: 2em;
+	line-height: 24px;
+	color: white;
+	width: 90%;
+	margin: 5px auto;
+}
+.test:hover .ind_content{
+	display: block;
+}
+.test:hover .ind_title{
+	font-weight: bold;
+	font-size: 15px;
+}
+.affiche{
+	margin: -18px 30px;
+	font-size: 20px;
+}
+.ind_content{
+	display: none;
+}
+.affiche span{
+	font-size: 15px;
+	float: right;
+	color: #9BB3B8;
+}
+.sec_display{
+	width: 66%;         /*border: 1px solid black;*/
+	margin: 15px auto ;
+	position: relative;
+	overflow: hidden;	
+	padding-top: 20px;
+}
+.container{
+                    /*border:1px solid red;*/
+}
+.col-md-4{
+	margin:0;        /*border: 1px solid blue;*/
+	height: 100%;
+}
+.min_container{
+	margin:0 -8px;    border: 1px solid #CCCCCC;
+	height: 100%;
+	overflow: hidden;
+}
+.min_container span{
+	margin:15px 10px;
+}
+.min_img{
+	width: 100%;
+}
+.min_container div{
+	width: 100%;
+	padding: 5px 15px 0px;
+	height: 90px;
+	font-size: 13px;
+}
+
+

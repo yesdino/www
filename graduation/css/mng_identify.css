@@ -1,0 +1,17 @@
+body{  font-size: 12px;color: #45565A; }
+#msg1,#msg2,#msg3{  color: red;  }
+#identity{                                 /*background-color: #EBF0F1; */ 
+  border: 1px solid #FF5E00;
+  padding: 5%;
+  width: 25%;
+  margin-top: 100px;
+  margin-left:30%;
+  border-radius:20px
+}
+body{
+background:url(../img/backgrm.png); 
+background-size: 100%;
+background-repeat:no-repeat;
+margin: 0;
+position: relative;
+}

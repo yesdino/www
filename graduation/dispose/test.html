@@ -1,0 +1,63 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<title>ajax测试</title>
+<script type="text/javascript" src="../lib/bootstrap-3.3.7/docs/assets/js/vendor/jquery.min.js"></script>
+<script type="text/javascript">
+ $(function(){
+  $("#send").click(function(){
+   var Data = $("input").serialize();
+   var URL = 'test.php';
+   $.ajax({
+    url:URL,
+    type:'post',
+    dataType:'json',
+    data:Data,
+    success:function(retn){
+     var str = retn.username;
+     var str2 = retn.password;
+     var USER = "11";   //设置账号
+     var PSD = "22";   // 设置密码
+     if((str == USER)&&(str2 == PSD)){
+      window.location = "../manager.php";
+     }
+     if(str  !== USER){  
+      $("#msg1").html("请输入正确账号");  
+    }
+     if(str2 !== PSD){  
+      $("#msg2").html("请输入正确密码");  
+    }
+     
+    }
+   });
+  });  
+ });
+</script>
+<style type="text/css">
+body{  font-size: 12px;color: #45565A; }
+#msg1,#msg2{  color: red;  }
+</style>
+</head>
+<body>
+ 
+<div style="margin-left: 40%;">
+	 <h4>请填写管理员信息与验证码</h4>
+	 <form id="my" action="" method="post">
+	  <p>
+  	  <span>账号：</span>
+      <input type="text" name="username" />
+  	  <span id="msg1">*</span>
+	  </p>
+	  <p>
+      <span>密码：</span>
+      <input type="text" name="password" />
+      <span id="msg2">*</span>
+    </p>
+	  
+	 </form>
+   <div></div>
+	 <button id="send">提交</button>
+   <button onclick="javascript:history.back();">返回</button>
+</div>
+</body>
+</html>
